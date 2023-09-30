@@ -7,6 +7,9 @@ public class Person {
 	
 
 
+	
+
+
 	public String getName() {
 		return Name;
 	}
@@ -39,9 +42,27 @@ public class Person {
 		car.setFuel_level(50);
 		p1.setName("Goku");
 		p1.setCar(car);
-		System.out.println("Name: "+p1.getName());
-		System.out.println("Car: "+p1.getCar());
+		System.out.println(p1.toString());
+
+		Person p2=new Person();
+		Car car2=new Car();	
+		car2.setMake(99893);
+		car2.setModel("Vol3vo");
+		car2.setYear(19983);
+		car2.setMileage(223.6);
+		car2.setFuel_level(530);
+		p2.setName("Gohan");
+		p2.setCar(car2);
+		System.out.println(p2.toString());
 		
+		
+		
+	}
+
+
+	@Override
+	public String toString() {
+		return "Person [Name=" + Name + ", car=" + car + "]";
 	}
 
 }

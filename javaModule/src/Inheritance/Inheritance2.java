@@ -5,24 +5,32 @@ public class Inheritance2 {
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Lion l1=new Lion();
-		l1.show();
-		Animals l2=new Lion();
-		l2.show();
-		Deer d1=new Deer();
-		d1.show();
+		Deer deer=new Deer();
+		deer.show();
+	//	deer.display();
 
 	}
 
 }
 class Animals{
+	void display() {
+		System.out.println("Animal");
+	}
 	void show() {
 		System.out.println("I am an Animal");
+	}
+	Animals(){
+		System.out.println("constructor Animal");
 	}
 }
 class Herbi extends Animals{
 	void show() {
+		super.show();
 		System.out.println("I am a herbi Animal");
+	}
+	Herbi(){
+		super();
+		System.out.println("Constru herbi");
 	}
 }
 class Carni extends Animals{
@@ -36,7 +44,9 @@ class Lion extends Carni{
 	}
 }
 class Deer extends Herbi{
+	
 	void show() {
+		
 		super.show();
 		System.out.println("I am a Deer");
 	}

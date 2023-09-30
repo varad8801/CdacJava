@@ -15,6 +15,18 @@ public class Vehicle {
 
 
 	
+	
+
+
+
+	
+
+
+
+
+
+
+
 	public Vehicle(int make, String model, int year, String color) {
 		super();
 		this.make = make;
@@ -25,12 +37,40 @@ public class Vehicle {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 	public Vehicle(int make, String model, int year) {
 		super();
 		this.make = make;
 		this.model = model;
 		this.year = year;
-		color="unknown";
+		color="Unknown";
 	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
 	
 }

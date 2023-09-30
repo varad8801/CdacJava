@@ -3,7 +3,8 @@ package constructor;
 public class Truck extends Vehicle {
 	double payloadCapacity;
 	double towingCapacity ;
-	Truck(){
+	
+	public Truck() {
 		super();
 		payloadCapacity=0.0;
 		towingCapacity=0.0;
